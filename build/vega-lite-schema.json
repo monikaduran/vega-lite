@@ -4762,6 +4762,31 @@
           },
           "type": "array"
         },
+        "init": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "items": {
+                  "type": "number"
+                },
+                "type": "array"
+              },
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              }
+            ]
+          },
+          "type": "object"
+        },
         "mark": {
           "$ref": "#/definitions/BrushConfig",
           "description": "An interval selection also adds a rectangle mark to depict the\nextents of the interval. The `mark` property can be used to customize the\nappearance of the mark."
@@ -4831,6 +4856,31 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "init": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "items": {
+                  "type": "number"
+                },
+                "type": "array"
+              },
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              }
+            ]
+          },
+          "type": "object"
         },
         "mark": {
           "$ref": "#/definitions/BrushConfig",
@@ -6308,6 +6358,31 @@
           },
           "type": "array"
         },
+        "init": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "items": {
+                  "type": "number"
+                },
+                "type": "array"
+              },
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              }
+            ]
+          },
+          "type": "object"
+        },
         "nearest": {
           "description": "When true, an invisible voronoi diagram is computed to accelerate discrete\nselection. The data value _nearest_ the mouse cursor is added to the selection.\n\nSee the [nearest transform](https://vega.github.io/vega-lite/docs/nearest.html) documentation for more information.",
           "type": "boolean"
@@ -6363,6 +6438,31 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "init": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "items": {
+                  "type": "number"
+                },
+                "type": "array"
+              },
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              }
+            ]
+          },
+          "type": "object"
         },
         "nearest": {
           "description": "When true, an invisible voronoi diagram is computed to accelerate discrete\nselection. The data value _nearest_ the mouse cursor is added to the selection.\n\nSee the [nearest transform](https://vega.github.io/vega-lite/docs/nearest.html) documentation for more information.",
@@ -7859,6 +7959,31 @@
           },
           "type": "array"
         },
+        "init": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "items": {
+                  "type": "number"
+                },
+                "type": "array"
+              },
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              }
+            ]
+          },
+          "type": "object"
+        },
         "nearest": {
           "description": "When true, an invisible voronoi diagram is computed to accelerate discrete\nselection. The data value _nearest_ the mouse cursor is added to the selection.\n\nSee the [nearest transform](https://vega.github.io/vega-lite/docs/nearest.html) documentation for more information.",
           "type": "boolean"
@@ -7921,6 +8046,31 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "init": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "items": {
+                  "type": "number"
+                },
+                "type": "array"
+              },
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              }
+            ]
+          },
+          "type": "object"
         },
         "nearest": {
           "description": "When true, an invisible voronoi diagram is computed to accelerate discrete\nselection. The data value _nearest_ the mouse cursor is added to the selection.\n\nSee the [nearest transform](https://vega.github.io/vega-lite/docs/nearest.html) documentation for more information.",
