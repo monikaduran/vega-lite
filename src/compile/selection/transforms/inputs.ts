@@ -13,15 +13,16 @@ const inputBindings: TransformCompiler = {
     const name = selCmpt.name;
     const proj = selCmpt.project;
     const bind = selCmpt.bind;
+    const init = selCmpt.init;
     const datum = nearest.has(selCmpt) ? '(item().isVoronoi ? datum.datum : datum)' : 'datum';
 
-    proj.forEach(p => {
+    proj.forEach((p, i) => {
       const sgname = varName(`${name}_${p.field}`);
       const hasSignal = signals.filter(s => s.name === sgname);
       if (!hasSignal.length) {
         signals.unshift({
           name: sgname,
-          value: '',
+          value: init ? init[i] : null,
           on: [
             {
               events: selCmpt.events,

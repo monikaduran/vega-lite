@@ -18,12 +18,13 @@ const project: TransformCompiler = {
   parse: (model, selDef, selCmpt) => {
     const timeUnits: Dict<TimeUnitComponent> = {};
     const f: Dict<ProjectSelectionComponent> = {};
-    const p = selCmpt.project || (selCmpt.project = []);
+    const proj = selCmpt.project || (selCmpt.project = []);
+    const init = selDef.init;
     selCmpt.fields = {};
 
     // TODO: find a possible channel mapping for these fields.
     if (selDef.fields) {
-      p.push.apply(p, selDef.fields.map(field => ({field, type: 'E'})));
+      proj.push.apply(proj, selDef.fields.map(field => ({field, type: 'E'})));
     }
 
     (selDef.encodings || []).forEach((channel: SingleDefChannel) => {
@@ -60,7 +61,7 @@ const project: TransformCompiler = {
             type = 'R-RE';
           }
 
-          p.push((f[field] = {field, channel, type}));
+          proj.push((f[field] = {field, channel, type}));
         }
 
         selCmpt.fields[channel] = field;
@@ -68,6 +69,10 @@ const project: TransformCompiler = {
         log.warn(log.message.cannotProjectOnChannelWithoutField(channel));
       }
     });
+
+    if (init) {
+      selCmpt.init = proj.map(p => init[p.channel] || init[p.field]);
+    }
 
     if (keys(timeUnits).length) {
       selCmpt.timeUnit = new TimeUnitNode(null, timeUnits);
