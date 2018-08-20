@@ -61,7 +61,7 @@
       "on": [
         {
           "events": [{"signal": "view_income"}, {"signal": "view_health"}],
-          "update": "view_income && view_health ? {unit: \"\", fields: view_tuple_fields, values: [view_income, view_health]} : null"
+          "update": "view_income && view_health ? {unit: \"\", fields: view_tuple_fields, values: [view_income,view_health]} : null"
         }
       ]
     },
@@ -120,12 +120,7 @@
     },
     {
       "name": "view_modify",
-      "on": [
-        {
-          "events": {"signal": "view_tuple"},
-          "update": "modify(\"view_store\", view_tuple, true)"
-        }
-      ]
+      "update": "modify(\"view_store\", view_tuple, true)"
     }
   ],
   "marks": [

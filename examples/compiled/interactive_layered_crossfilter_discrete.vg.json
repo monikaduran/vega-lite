@@ -230,7 +230,6 @@
       "signals": [
         {
           "name": "brush_tuple",
-          "value": {},
           "on": [
             {
               "events": [{"source": "scope", "type": "click"}],
@@ -255,12 +254,7 @@
         },
         {
           "name": "brush_modify",
-          "on": [
-            {
-              "events": {"signal": "brush_tuple"},
-              "update": "modify(\"brush_store\", brush_toggle ? null : brush_tuple, brush_toggle ? null : true, brush_toggle ? brush_tuple : null)"
-            }
-          ]
+          "update": "modify(\"brush_store\", brush_toggle ? null : brush_tuple, brush_toggle ? null : true, brush_toggle ? brush_tuple : null)"
         }
       ],
       "marks": [
@@ -375,7 +369,6 @@
       "signals": [
         {
           "name": "brush_tuple",
-          "value": {},
           "on": [
             {
               "events": [{"source": "scope", "type": "click"}],
@@ -400,12 +393,7 @@
         },
         {
           "name": "brush_modify",
-          "on": [
-            {
-              "events": {"signal": "brush_tuple"},
-              "update": "modify(\"brush_store\", brush_toggle ? null : brush_tuple, brush_toggle ? null : true, brush_toggle ? brush_tuple : null)"
-            }
-          ]
+          "update": "modify(\"brush_store\", brush_toggle ? null : brush_tuple, brush_toggle ? null : true, brush_toggle ? brush_tuple : null)"
         }
       ],
       "marks": [
@@ -520,7 +508,6 @@
       "signals": [
         {
           "name": "brush_tuple",
-          "value": {},
           "on": [
             {
               "events": [{"source": "scope", "type": "click"}],
@@ -545,12 +532,7 @@
         },
         {
           "name": "brush_modify",
-          "on": [
-            {
-              "events": {"signal": "brush_tuple"},
-              "update": "modify(\"brush_store\", brush_toggle ? null : brush_tuple, brush_toggle ? null : true, brush_toggle ? brush_tuple : null)"
-            }
-          ]
+          "update": "modify(\"brush_store\", brush_toggle ? null : brush_tuple, brush_toggle ? null : true, brush_toggle ? brush_tuple : null)"
         }
       ],
       "marks": [

@@ -243,7 +243,7 @@
       "on": [
         {
           "events": [{"signal": "highlight_col"}, {"signal": "highlight_row"}],
-          "update": "highlight_col && highlight_row ? {unit: \"\", fields: highlight_tuple_fields, values: [highlight_col, highlight_row]} : null"
+          "update": "highlight_col && highlight_row ? {unit: \"\", fields: highlight_tuple_fields, values: [highlight_col,highlight_row]} : null"
         }
       ]
     },
@@ -326,12 +326,7 @@
     },
     {
       "name": "highlight_modify",
-      "on": [
-        {
-          "events": {"signal": "highlight_tuple"},
-          "update": "modify(\"highlight_store\", highlight_tuple, true)"
-        }
-      ]
+      "update": "modify(\"highlight_store\", highlight_tuple, true)"
     }
   ],
   "marks": [

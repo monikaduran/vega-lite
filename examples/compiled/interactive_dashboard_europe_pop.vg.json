@@ -503,12 +503,7 @@
         },
         {
           "name": "brush_modify",
-          "on": [
-            {
-              "events": {"signal": "brush_tuple"},
-              "update": "modify(\"brush_store\", brush_tuple, true)"
-            }
-          ]
+          "update": "modify(\"brush_store\", brush_tuple, true)"
         }
       ],
       "marks": [
@@ -816,12 +811,7 @@
         },
         {
           "name": "brush_modify",
-          "on": [
-            {
-              "events": {"signal": "brush_tuple"},
-              "update": "modify(\"brush_store\", brush_tuple, true)"
-            }
-          ]
+          "update": "modify(\"brush_store\", brush_tuple, true)"
         }
       ],
       "marks": [
@@ -1019,7 +1009,7 @@
             },
             {
               "events": {"signal": "brush_scale_trigger"},
-              "update": "[scale(\"concat_2_x\", brush_Population_ages_65_and_above_of_total[0]), scale(\"concat_2_x\", brush_Population_ages_65_and_above_of_total[1])]"
+              "update": "[scale(\"concat_2_x\", brush_Population_ages_65_and_above_of_total[0]),scale(\"concat_2_x\", brush_Population_ages_65_and_above_of_total[1])]"
             },
             {
               "events": {"signal": "brush_translate_delta"},
@@ -1074,7 +1064,7 @@
             },
             {
               "events": {"signal": "brush_scale_trigger"},
-              "update": "[scale(\"concat_2_y\", brush_Population_ages_15_64_of_total[0]), scale(\"concat_2_y\", brush_Population_ages_15_64_of_total[1])]"
+              "update": "[scale(\"concat_2_y\", brush_Population_ages_15_64_of_total[0]),scale(\"concat_2_y\", brush_Population_ages_15_64_of_total[1])]"
             },
             {
               "events": {"signal": "brush_translate_delta"},
@@ -1107,7 +1097,7 @@
                 {"signal": "brush_Population_ages_65_and_above_of_total"},
                 {"signal": "brush_Population_ages_15_64_of_total"}
               ],
-              "update": "brush_Population_ages_65_and_above_of_total && brush_Population_ages_15_64_of_total ? {unit: \"concat_2\", fields: brush_tuple_fields, values: [brush_Population_ages_65_and_above_of_total, brush_Population_ages_15_64_of_total]} : null"
+              "update": "brush_Population_ages_65_and_above_of_total && brush_Population_ages_15_64_of_total ? {unit: \"concat_2\", fields: brush_tuple_fields, values: [brush_Population_ages_65_and_above_of_total,brush_Population_ages_15_64_of_total]} : null"
             }
           ]
         },
@@ -1190,12 +1180,7 @@
         },
         {
           "name": "brush_modify",
-          "on": [
-            {
-              "events": {"signal": "brush_tuple"},
-              "update": "modify(\"brush_store\", brush_tuple, true)"
-            }
-          ]
+          "update": "modify(\"brush_store\", brush_tuple, true)"
         }
       ],
       "marks": [

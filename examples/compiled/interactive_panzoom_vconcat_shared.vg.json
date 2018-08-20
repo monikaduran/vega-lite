@@ -86,7 +86,7 @@
                 {"signal": "region_Horsepower"},
                 {"signal": "region_Miles_per_Gallon"}
               ],
-              "update": "region_Horsepower && region_Miles_per_Gallon ? {unit: \"concat_0\", fields: region_tuple_fields, values: [region_Horsepower, region_Miles_per_Gallon]} : null"
+              "update": "region_Horsepower && region_Miles_per_Gallon ? {unit: \"concat_0\", fields: region_tuple_fields, values: [region_Horsepower,region_Miles_per_Gallon]} : null"
             }
           ]
         },
@@ -145,12 +145,7 @@
         },
         {
           "name": "region_modify",
-          "on": [
-            {
-              "events": {"signal": "region_tuple"},
-              "update": "modify(\"region_store\", region_tuple, true)"
-            }
-          ]
+          "update": "modify(\"region_store\", region_tuple, true)"
         }
       ],
       "marks": [

@@ -105,7 +105,6 @@
       "signals": [
         {
           "name": "pts_tuple",
-          "value": {},
           "on": [
             {
               "events": [{"source": "scope", "type": "click"}],
@@ -130,12 +129,7 @@
         },
         {
           "name": "pts_modify",
-          "on": [
-            {
-              "events": {"signal": "pts_tuple"},
-              "update": "modify(\"pts_store\", pts_toggle ? null : pts_tuple, pts_toggle ? null : true, pts_toggle ? pts_tuple : null)"
-            }
-          ]
+          "update": "modify(\"pts_store\", pts_toggle ? null : pts_tuple, pts_toggle ? null : true, pts_toggle ? pts_tuple : null)"
         }
       ],
       "marks": [

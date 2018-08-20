@@ -262,7 +262,7 @@
             },
             {
               "events": {"signal": "brush_scale_trigger"},
-              "update": "[scale(\"child_distance_x\", brush_distance[0]), scale(\"child_distance_x\", brush_distance[1])]"
+              "update": "[scale(\"child_distance_x\", brush_distance[0]),scale(\"child_distance_x\", brush_distance[1])]"
             },
             {
               "events": {"signal": "brush_translate_delta"},
@@ -375,12 +375,7 @@
         },
         {
           "name": "brush_modify",
-          "on": [
-            {
-              "events": {"signal": "brush_tuple"},
-              "update": "modify(\"brush_store\", brush_tuple, true)"
-            }
-          ]
+          "update": "modify(\"brush_store\", brush_tuple, true)"
         }
       ],
       "marks": [
@@ -610,7 +605,7 @@
             },
             {
               "events": {"signal": "brush_scale_trigger"},
-              "update": "[scale(\"child_delay_x\", brush_delay[0]), scale(\"child_delay_x\", brush_delay[1])]"
+              "update": "[scale(\"child_delay_x\", brush_delay[0]),scale(\"child_delay_x\", brush_delay[1])]"
             },
             {
               "events": {"signal": "brush_translate_delta"},
@@ -723,12 +718,7 @@
         },
         {
           "name": "brush_modify",
-          "on": [
-            {
-              "events": {"signal": "brush_tuple"},
-              "update": "modify(\"brush_store\", brush_tuple, true)"
-            }
-          ]
+          "update": "modify(\"brush_store\", brush_tuple, true)"
         }
       ],
       "marks": [
@@ -958,7 +948,7 @@
             },
             {
               "events": {"signal": "brush_scale_trigger"},
-              "update": "[scale(\"child_time_x\", brush_time[0]), scale(\"child_time_x\", brush_time[1])]"
+              "update": "[scale(\"child_time_x\", brush_time[0]),scale(\"child_time_x\", brush_time[1])]"
             },
             {
               "events": {"signal": "brush_translate_delta"},
@@ -1071,12 +1061,7 @@
         },
         {
           "name": "brush_modify",
-          "on": [
-            {
-              "events": {"signal": "brush_tuple"},
-              "update": "modify(\"brush_store\", brush_tuple, true)"
-            }
-          ]
+          "update": "modify(\"brush_store\", brush_tuple, true)"
         }
       ],
       "marks": [

@@ -156,7 +156,7 @@
       "on": [
         {
           "events": [{"signal": "alex_Cylinders"}, {"signal": "alex_Origin"}],
-          "update": "alex_Cylinders && alex_Origin ? {unit: \"\", fields: alex_tuple_fields, values: [alex_Cylinders, alex_Origin]} : null"
+          "update": "alex_Cylinders && alex_Origin ? {unit: \"\", fields: alex_tuple_fields, values: [alex_Cylinders,alex_Origin]} : null"
         }
       ]
     },
@@ -240,12 +240,7 @@
     },
     {
       "name": "alex_modify",
-      "on": [
-        {
-          "events": {"signal": "alex_tuple"},
-          "update": "modify(\"alex_store\", alex_tuple, true)"
-        }
-      ]
+      "update": "modify(\"alex_store\", alex_tuple, true)"
     },
     {
       "name": "morgan_x",
@@ -365,7 +360,7 @@
             {"signal": "morgan_Cylinders"},
             {"signal": "morgan_Origin"}
           ],
-          "update": "morgan_Cylinders && morgan_Origin ? {unit: \"\", fields: morgan_tuple_fields, values: [morgan_Cylinders, morgan_Origin]} : null"
+          "update": "morgan_Cylinders && morgan_Origin ? {unit: \"\", fields: morgan_tuple_fields, values: [morgan_Cylinders,morgan_Origin]} : null"
         }
       ]
     },
@@ -449,12 +444,7 @@
     },
     {
       "name": "morgan_modify",
-      "on": [
-        {
-          "events": {"signal": "morgan_tuple"},
-          "update": "modify(\"morgan_store\", morgan_tuple, true)"
-        }
-      ]
+      "update": "modify(\"morgan_store\", morgan_tuple, true)"
     }
   ],
   "marks": [

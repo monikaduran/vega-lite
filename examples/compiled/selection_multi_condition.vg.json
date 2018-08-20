@@ -66,7 +66,7 @@
         },
         {
           "events": {"signal": "brush_scale_trigger"},
-          "update": "[scale(\"x\", brush_Horsepower[0]), scale(\"x\", brush_Horsepower[1])]"
+          "update": "[scale(\"x\", brush_Horsepower[0]),scale(\"x\", brush_Horsepower[1])]"
         },
         {
           "events": {"signal": "brush_translate_delta"},
@@ -121,7 +121,7 @@
         },
         {
           "events": {"signal": "brush_scale_trigger"},
-          "update": "[scale(\"y\", brush_Miles_per_Gallon[0]), scale(\"y\", brush_Miles_per_Gallon[1])]"
+          "update": "[scale(\"y\", brush_Miles_per_Gallon[0]),scale(\"y\", brush_Miles_per_Gallon[1])]"
         },
         {
           "events": {"signal": "brush_translate_delta"},
@@ -154,7 +154,7 @@
             {"signal": "brush_Horsepower"},
             {"signal": "brush_Miles_per_Gallon"}
           ],
-          "update": "brush_Horsepower && brush_Miles_per_Gallon ? {unit: \"\", fields: brush_tuple_fields, values: [brush_Horsepower, brush_Miles_per_Gallon]} : null"
+          "update": "brush_Horsepower && brush_Miles_per_Gallon ? {unit: \"\", fields: brush_tuple_fields, values: [brush_Horsepower,brush_Miles_per_Gallon]} : null"
         }
       ]
     },
@@ -233,16 +233,10 @@
     },
     {
       "name": "brush_modify",
-      "on": [
-        {
-          "events": {"signal": "brush_tuple"},
-          "update": "modify(\"brush_store\", brush_tuple, true)"
-        }
-      ]
+      "update": "modify(\"brush_store\", brush_tuple, true)"
     },
     {
       "name": "hoverbrush_tuple",
-      "value": {},
       "on": [
         {
           "events": [{"source": "scope", "type": "mouseover"}],
@@ -267,12 +261,7 @@
     },
     {
       "name": "hoverbrush_modify",
-      "on": [
-        {
-          "events": {"signal": "hoverbrush_tuple"},
-          "update": "modify(\"hoverbrush_store\", hoverbrush_toggle ? null : hoverbrush_tuple, hoverbrush_toggle ? null : true, hoverbrush_toggle ? hoverbrush_tuple : null)"
-        }
-      ]
+      "update": "modify(\"hoverbrush_store\", hoverbrush_toggle ? null : hoverbrush_tuple, hoverbrush_toggle ? null : true, hoverbrush_toggle ? hoverbrush_tuple : null)"
     }
   ],
   "marks": [

@@ -78,7 +78,7 @@
             },
             {
               "events": {"signal": "brush_scale_trigger"},
-              "update": "[scale(\"child_Horsepower_Miles_per_Gallon_x\", brush_Miles_per_Gallon[0]), scale(\"child_Horsepower_Miles_per_Gallon_x\", brush_Miles_per_Gallon[1])]"
+              "update": "[scale(\"child_Horsepower_Miles_per_Gallon_x\", brush_Miles_per_Gallon[0]),scale(\"child_Horsepower_Miles_per_Gallon_x\", brush_Miles_per_Gallon[1])]"
             },
             {
               "events": {"signal": "brush_translate_delta"},
@@ -133,7 +133,7 @@
             },
             {
               "events": {"signal": "brush_scale_trigger"},
-              "update": "[scale(\"child_Horsepower_Miles_per_Gallon_y\", brush_Horsepower[0]), scale(\"child_Horsepower_Miles_per_Gallon_y\", brush_Horsepower[1])]"
+              "update": "[scale(\"child_Horsepower_Miles_per_Gallon_y\", brush_Horsepower[0]),scale(\"child_Horsepower_Miles_per_Gallon_y\", brush_Horsepower[1])]"
             },
             {
               "events": {"signal": "brush_translate_delta"},
@@ -166,7 +166,7 @@
                 {"signal": "brush_Miles_per_Gallon"},
                 {"signal": "brush_Horsepower"}
               ],
-              "update": "brush_Miles_per_Gallon && brush_Horsepower ? {unit: \"child_Horsepower_Miles_per_Gallon\", fields: brush_tuple_fields, values: [brush_Miles_per_Gallon, brush_Horsepower]} : null"
+              "update": "brush_Miles_per_Gallon && brush_Horsepower ? {unit: \"child_Horsepower_Miles_per_Gallon\", fields: brush_tuple_fields, values: [brush_Miles_per_Gallon,brush_Horsepower]} : null"
             }
           ]
         },
@@ -249,12 +249,7 @@
         },
         {
           "name": "brush_modify",
-          "on": [
-            {
-              "events": {"signal": "brush_tuple"},
-              "update": "modify(\"brush_store\", brush_tuple, true)"
-            }
-          ]
+          "update": "modify(\"brush_store\", brush_tuple, true)"
         }
       ],
       "marks": [
@@ -476,7 +471,7 @@
             },
             {
               "events": {"signal": "brush_scale_trigger"},
-              "update": "[scale(\"child_Horsepower_Acceleration_x\", brush_Acceleration[0]), scale(\"child_Horsepower_Acceleration_x\", brush_Acceleration[1])]"
+              "update": "[scale(\"child_Horsepower_Acceleration_x\", brush_Acceleration[0]),scale(\"child_Horsepower_Acceleration_x\", brush_Acceleration[1])]"
             },
             {
               "events": {"signal": "brush_translate_delta"},
@@ -531,7 +526,7 @@
             },
             {
               "events": {"signal": "brush_scale_trigger"},
-              "update": "[scale(\"child_Horsepower_Acceleration_y\", brush_Horsepower[0]), scale(\"child_Horsepower_Acceleration_y\", brush_Horsepower[1])]"
+              "update": "[scale(\"child_Horsepower_Acceleration_y\", brush_Horsepower[0]),scale(\"child_Horsepower_Acceleration_y\", brush_Horsepower[1])]"
             },
             {
               "events": {"signal": "brush_translate_delta"},
@@ -564,7 +559,7 @@
                 {"signal": "brush_Acceleration"},
                 {"signal": "brush_Horsepower"}
               ],
-              "update": "brush_Acceleration && brush_Horsepower ? {unit: \"child_Horsepower_Acceleration\", fields: brush_tuple_fields, values: [brush_Acceleration, brush_Horsepower]} : null"
+              "update": "brush_Acceleration && brush_Horsepower ? {unit: \"child_Horsepower_Acceleration\", fields: brush_tuple_fields, values: [brush_Acceleration,brush_Horsepower]} : null"
             }
           ]
         },
@@ -647,12 +642,7 @@
         },
         {
           "name": "brush_modify",
-          "on": [
-            {
-              "events": {"signal": "brush_tuple"},
-              "update": "modify(\"brush_store\", brush_tuple, true)"
-            }
-          ]
+          "update": "modify(\"brush_store\", brush_tuple, true)"
         }
       ],
       "marks": [
@@ -874,7 +864,7 @@
             },
             {
               "events": {"signal": "brush_scale_trigger"},
-              "update": "[scale(\"child_Horsepower_Horsepower_x\", brush_Horsepower[0]), scale(\"child_Horsepower_Horsepower_x\", brush_Horsepower[1])]"
+              "update": "[scale(\"child_Horsepower_Horsepower_x\", brush_Horsepower[0]),scale(\"child_Horsepower_Horsepower_x\", brush_Horsepower[1])]"
             },
             {
               "events": {"signal": "brush_translate_delta"},
@@ -987,12 +977,7 @@
         },
         {
           "name": "brush_modify",
-          "on": [
-            {
-              "events": {"signal": "brush_tuple"},
-              "update": "modify(\"brush_store\", brush_tuple, true)"
-            }
-          ]
+          "update": "modify(\"brush_store\", brush_tuple, true)"
         }
       ],
       "marks": [
@@ -1211,7 +1196,7 @@
             },
             {
               "events": {"signal": "brush_scale_trigger"},
-              "update": "[scale(\"child_Acceleration_Miles_per_Gallon_x\", brush_Miles_per_Gallon[0]), scale(\"child_Acceleration_Miles_per_Gallon_x\", brush_Miles_per_Gallon[1])]"
+              "update": "[scale(\"child_Acceleration_Miles_per_Gallon_x\", brush_Miles_per_Gallon[0]),scale(\"child_Acceleration_Miles_per_Gallon_x\", brush_Miles_per_Gallon[1])]"
             },
             {
               "events": {"signal": "brush_translate_delta"},
@@ -1266,7 +1251,7 @@
             },
             {
               "events": {"signal": "brush_scale_trigger"},
-              "update": "[scale(\"child_Acceleration_Miles_per_Gallon_y\", brush_Acceleration[0]), scale(\"child_Acceleration_Miles_per_Gallon_y\", brush_Acceleration[1])]"
+              "update": "[scale(\"child_Acceleration_Miles_per_Gallon_y\", brush_Acceleration[0]),scale(\"child_Acceleration_Miles_per_Gallon_y\", brush_Acceleration[1])]"
             },
             {
               "events": {"signal": "brush_translate_delta"},
@@ -1299,7 +1284,7 @@
                 {"signal": "brush_Miles_per_Gallon"},
                 {"signal": "brush_Acceleration"}
               ],
-              "update": "brush_Miles_per_Gallon && brush_Acceleration ? {unit: \"child_Acceleration_Miles_per_Gallon\", fields: brush_tuple_fields, values: [brush_Miles_per_Gallon, brush_Acceleration]} : null"
+              "update": "brush_Miles_per_Gallon && brush_Acceleration ? {unit: \"child_Acceleration_Miles_per_Gallon\", fields: brush_tuple_fields, values: [brush_Miles_per_Gallon,brush_Acceleration]} : null"
             }
           ]
         },
@@ -1382,12 +1367,7 @@
         },
         {
           "name": "brush_modify",
-          "on": [
-            {
-              "events": {"signal": "brush_tuple"},
-              "update": "modify(\"brush_store\", brush_tuple, true)"
-            }
-          ]
+          "update": "modify(\"brush_store\", brush_tuple, true)"
         }
       ],
       "marks": [
@@ -1609,7 +1589,7 @@
             },
             {
               "events": {"signal": "brush_scale_trigger"},
-              "update": "[scale(\"child_Acceleration_Acceleration_x\", brush_Acceleration[0]), scale(\"child_Acceleration_Acceleration_x\", brush_Acceleration[1])]"
+              "update": "[scale(\"child_Acceleration_Acceleration_x\", brush_Acceleration[0]),scale(\"child_Acceleration_Acceleration_x\", brush_Acceleration[1])]"
             },
             {
               "events": {"signal": "brush_translate_delta"},
@@ -1722,12 +1702,7 @@
         },
         {
           "name": "brush_modify",
-          "on": [
-            {
-              "events": {"signal": "brush_tuple"},
-              "update": "modify(\"brush_store\", brush_tuple, true)"
-            }
-          ]
+          "update": "modify(\"brush_store\", brush_tuple, true)"
         }
       ],
       "marks": [
@@ -1946,7 +1921,7 @@
             },
             {
               "events": {"signal": "brush_scale_trigger"},
-              "update": "[scale(\"child_Acceleration_Horsepower_x\", brush_Horsepower[0]), scale(\"child_Acceleration_Horsepower_x\", brush_Horsepower[1])]"
+              "update": "[scale(\"child_Acceleration_Horsepower_x\", brush_Horsepower[0]),scale(\"child_Acceleration_Horsepower_x\", brush_Horsepower[1])]"
             },
             {
               "events": {"signal": "brush_translate_delta"},
@@ -2001,7 +1976,7 @@
             },
             {
               "events": {"signal": "brush_scale_trigger"},
-              "update": "[scale(\"child_Acceleration_Horsepower_y\", brush_Acceleration[0]), scale(\"child_Acceleration_Horsepower_y\", brush_Acceleration[1])]"
+              "update": "[scale(\"child_Acceleration_Horsepower_y\", brush_Acceleration[0]),scale(\"child_Acceleration_Horsepower_y\", brush_Acceleration[1])]"
             },
             {
               "events": {"signal": "brush_translate_delta"},
@@ -2034,7 +2009,7 @@
                 {"signal": "brush_Horsepower"},
                 {"signal": "brush_Acceleration"}
               ],
-              "update": "brush_Horsepower && brush_Acceleration ? {unit: \"child_Acceleration_Horsepower\", fields: brush_tuple_fields, values: [brush_Horsepower, brush_Acceleration]} : null"
+              "update": "brush_Horsepower && brush_Acceleration ? {unit: \"child_Acceleration_Horsepower\", fields: brush_tuple_fields, values: [brush_Horsepower,brush_Acceleration]} : null"
             }
           ]
         },
@@ -2117,12 +2092,7 @@
         },
         {
           "name": "brush_modify",
-          "on": [
-            {
-              "events": {"signal": "brush_tuple"},
-              "update": "modify(\"brush_store\", brush_tuple, true)"
-            }
-          ]
+          "update": "modify(\"brush_store\", brush_tuple, true)"
         }
       ],
       "marks": [
@@ -2344,7 +2314,7 @@
             },
             {
               "events": {"signal": "brush_scale_trigger"},
-              "update": "[scale(\"child_Miles_per_Gallon_Miles_per_Gallon_x\", brush_Miles_per_Gallon[0]), scale(\"child_Miles_per_Gallon_Miles_per_Gallon_x\", brush_Miles_per_Gallon[1])]"
+              "update": "[scale(\"child_Miles_per_Gallon_Miles_per_Gallon_x\", brush_Miles_per_Gallon[0]),scale(\"child_Miles_per_Gallon_Miles_per_Gallon_x\", brush_Miles_per_Gallon[1])]"
             },
             {
               "events": {"signal": "brush_translate_delta"},
@@ -2457,12 +2427,7 @@
         },
         {
           "name": "brush_modify",
-          "on": [
-            {
-              "events": {"signal": "brush_tuple"},
-              "update": "modify(\"brush_store\", brush_tuple, true)"
-            }
-          ]
+          "update": "modify(\"brush_store\", brush_tuple, true)"
         }
       ],
       "marks": [
@@ -2681,7 +2646,7 @@
             },
             {
               "events": {"signal": "brush_scale_trigger"},
-              "update": "[scale(\"child_Miles_per_Gallon_Acceleration_x\", brush_Acceleration[0]), scale(\"child_Miles_per_Gallon_Acceleration_x\", brush_Acceleration[1])]"
+              "update": "[scale(\"child_Miles_per_Gallon_Acceleration_x\", brush_Acceleration[0]),scale(\"child_Miles_per_Gallon_Acceleration_x\", brush_Acceleration[1])]"
             },
             {
               "events": {"signal": "brush_translate_delta"},
@@ -2736,7 +2701,7 @@
             },
             {
               "events": {"signal": "brush_scale_trigger"},
-              "update": "[scale(\"child_Miles_per_Gallon_Acceleration_y\", brush_Miles_per_Gallon[0]), scale(\"child_Miles_per_Gallon_Acceleration_y\", brush_Miles_per_Gallon[1])]"
+              "update": "[scale(\"child_Miles_per_Gallon_Acceleration_y\", brush_Miles_per_Gallon[0]),scale(\"child_Miles_per_Gallon_Acceleration_y\", brush_Miles_per_Gallon[1])]"
             },
             {
               "events": {"signal": "brush_translate_delta"},
@@ -2769,7 +2734,7 @@
                 {"signal": "brush_Acceleration"},
                 {"signal": "brush_Miles_per_Gallon"}
               ],
-              "update": "brush_Acceleration && brush_Miles_per_Gallon ? {unit: \"child_Miles_per_Gallon_Acceleration\", fields: brush_tuple_fields, values: [brush_Acceleration, brush_Miles_per_Gallon]} : null"
+              "update": "brush_Acceleration && brush_Miles_per_Gallon ? {unit: \"child_Miles_per_Gallon_Acceleration\", fields: brush_tuple_fields, values: [brush_Acceleration,brush_Miles_per_Gallon]} : null"
             }
           ]
         },
@@ -2852,12 +2817,7 @@
         },
         {
           "name": "brush_modify",
-          "on": [
-            {
-              "events": {"signal": "brush_tuple"},
-              "update": "modify(\"brush_store\", brush_tuple, true)"
-            }
-          ]
+          "update": "modify(\"brush_store\", brush_tuple, true)"
         }
       ],
       "marks": [
@@ -3079,7 +3039,7 @@
             },
             {
               "events": {"signal": "brush_scale_trigger"},
-              "update": "[scale(\"child_Miles_per_Gallon_Horsepower_x\", brush_Horsepower[0]), scale(\"child_Miles_per_Gallon_Horsepower_x\", brush_Horsepower[1])]"
+              "update": "[scale(\"child_Miles_per_Gallon_Horsepower_x\", brush_Horsepower[0]),scale(\"child_Miles_per_Gallon_Horsepower_x\", brush_Horsepower[1])]"
             },
             {
               "events": {"signal": "brush_translate_delta"},
@@ -3134,7 +3094,7 @@
             },
             {
               "events": {"signal": "brush_scale_trigger"},
-              "update": "[scale(\"child_Miles_per_Gallon_Horsepower_y\", brush_Miles_per_Gallon[0]), scale(\"child_Miles_per_Gallon_Horsepower_y\", brush_Miles_per_Gallon[1])]"
+              "update": "[scale(\"child_Miles_per_Gallon_Horsepower_y\", brush_Miles_per_Gallon[0]),scale(\"child_Miles_per_Gallon_Horsepower_y\", brush_Miles_per_Gallon[1])]"
             },
             {
               "events": {"signal": "brush_translate_delta"},
@@ -3167,7 +3127,7 @@
                 {"signal": "brush_Horsepower"},
                 {"signal": "brush_Miles_per_Gallon"}
               ],
-              "update": "brush_Horsepower && brush_Miles_per_Gallon ? {unit: \"child_Miles_per_Gallon_Horsepower\", fields: brush_tuple_fields, values: [brush_Horsepower, brush_Miles_per_Gallon]} : null"
+              "update": "brush_Horsepower && brush_Miles_per_Gallon ? {unit: \"child_Miles_per_Gallon_Horsepower\", fields: brush_tuple_fields, values: [brush_Horsepower,brush_Miles_per_Gallon]} : null"
             }
           ]
         },
@@ -3250,12 +3210,7 @@
         },
         {
           "name": "brush_modify",
-          "on": [
-            {
-              "events": {"signal": "brush_tuple"},
-              "update": "modify(\"brush_store\", brush_tuple, true)"
-            }
-          ]
+          "update": "modify(\"brush_store\", brush_tuple, true)"
         }
       ],
       "marks": [

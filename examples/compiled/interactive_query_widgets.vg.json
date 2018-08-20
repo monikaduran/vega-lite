@@ -47,7 +47,7 @@
     },
     {
       "name": "CylYr_Year",
-      "value": "",
+      "value": 1977,
       "on": [
         {
           "events": [{"source": "scope", "type": "click"}],
@@ -58,7 +58,7 @@
     },
     {
       "name": "CylYr_Cylinders",
-      "value": "",
+      "value": 4,
       "on": [
         {
           "events": [{"source": "scope", "type": "click"}],
@@ -70,7 +70,8 @@
     {"name": "CylYr", "update": "vlSelectionResolve(\"CylYr_store\")"},
     {
       "name": "CylYr_tuple",
-      "update": "CylYr_Cylinders && CylYr_Year ? {fields: CylYr_tuple_fields, values: [CylYr_Cylinders, CylYr_Year]} : null"
+      "update": "CylYr_Cylinders && CylYr_Year ? {fields: CylYr_tuple_fields, values: [CylYr_Cylinders, CylYr_Year]} : null",
+      "react": false
     },
     {
       "name": "CylYr_tuple_fields",
@@ -78,12 +79,7 @@
     },
     {
       "name": "CylYr_modify",
-      "on": [
-        {
-          "events": {"signal": "CylYr_tuple"},
-          "update": "modify(\"CylYr_store\", CylYr_tuple, true)"
-        }
-      ]
+      "update": "modify(\"CylYr_store\", CylYr_tuple, true)"
     }
   ],
   "marks": [

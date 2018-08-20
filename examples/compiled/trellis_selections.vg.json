@@ -30,7 +30,6 @@
     },
     {
       "name": "xenc_X",
-      "value": "",
       "on": [
         {
           "events": [{"source": "scope", "type": "mouseover"}],
@@ -173,7 +172,7 @@
             },
             {
               "events": {"signal": "brush_scale_trigger"},
-              "update": "[scale(\"x\", brush_X[0]), scale(\"x\", brush_X[1])]"
+              "update": "[scale(\"x\", brush_X[0]),scale(\"x\", brush_X[1])]"
             },
             {
               "events": {"signal": "brush_translate_delta"},
@@ -287,12 +286,7 @@
         },
         {
           "name": "brush_modify",
-          "on": [
-            {
-              "events": {"signal": "brush_tuple"},
-              "update": "modify(\"brush_store\", brush_tuple, {unit: \"child\" + '_' + (facet[\"Series\"])})"
-            }
-          ]
+          "update": "modify(\"brush_store\", brush_tuple, {unit: \"child\" + '_' + (facet[\"Series\"])})"
         },
         {
           "name": "grid_X",
@@ -327,7 +321,7 @@
           "on": [
             {
               "events": [{"signal": "grid_X"}, {"signal": "grid_Y"}],
-              "update": "grid_X && grid_Y ? {unit: \"child\" + '_' + (facet[\"Series\"]), fields: grid_tuple_fields, values: [grid_X, grid_Y]} : null"
+              "update": "grid_X && grid_Y ? {unit: \"child\" + '_' + (facet[\"Series\"]), fields: grid_tuple_fields, values: [grid_X,grid_Y]} : null"
             }
           ]
         },
@@ -395,12 +389,7 @@
         },
         {
           "name": "grid_modify",
-          "on": [
-            {
-              "events": {"signal": "grid_tuple"},
-              "update": "modify(\"grid_store\", grid_tuple, true)"
-            }
-          ]
+          "update": "modify(\"grid_store\", grid_tuple, true)"
         },
         {
           "name": "xenc_tuple",
@@ -412,12 +401,7 @@
         },
         {
           "name": "xenc_modify",
-          "on": [
-            {
-              "events": {"signal": "xenc_tuple"},
-              "update": "modify(\"xenc_store\", xenc_tuple, true)"
-            }
-          ]
+          "update": "modify(\"xenc_store\", xenc_tuple, true)"
         }
       ],
       "marks": [

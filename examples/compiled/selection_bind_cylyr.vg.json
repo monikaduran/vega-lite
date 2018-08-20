@@ -29,7 +29,6 @@
     },
     {
       "name": "CylYr_Year",
-      "value": "",
       "on": [
         {
           "events": [{"source": "scope", "type": "click"}],
@@ -40,7 +39,6 @@
     },
     {
       "name": "CylYr_Cylinders",
-      "value": "",
       "on": [
         {
           "events": [{"source": "scope", "type": "click"}],
@@ -60,12 +58,7 @@
     },
     {
       "name": "CylYr_modify",
-      "on": [
-        {
-          "events": {"signal": "CylYr_tuple"},
-          "update": "modify(\"CylYr_store\", CylYr_tuple, true)"
-        }
-      ]
+      "update": "modify(\"CylYr_store\", CylYr_tuple, true)"
     }
   ],
   "marks": [

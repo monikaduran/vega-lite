@@ -31,7 +31,6 @@
     },
     {
       "name": "paintbrush_tuple",
-      "value": {},
       "on": [
         {
           "events": [{"source": "scope", "type": "click"}],
@@ -46,12 +45,7 @@
     },
     {
       "name": "paintbrush_modify",
-      "on": [
-        {
-          "events": {"signal": "paintbrush_tuple"},
-          "update": "modify(\"paintbrush_store\", paintbrush_tuple, null)"
-        }
-      ]
+      "update": "modify(\"paintbrush_store\", paintbrush_tuple, null)"
     }
   ],
   "marks": [

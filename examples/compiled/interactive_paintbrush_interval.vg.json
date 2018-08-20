@@ -63,7 +63,7 @@
         },
         {
           "events": {"signal": "paintbrush_scale_trigger"},
-          "update": "[scale(\"x\", paintbrush_Horsepower[0]), scale(\"x\", paintbrush_Horsepower[1])]"
+          "update": "[scale(\"x\", paintbrush_Horsepower[0]),scale(\"x\", paintbrush_Horsepower[1])]"
         },
         {
           "events": {"signal": "paintbrush_translate_delta"},
@@ -118,7 +118,7 @@
         },
         {
           "events": {"signal": "paintbrush_scale_trigger"},
-          "update": "[scale(\"y\", paintbrush_Miles_per_Gallon[0]), scale(\"y\", paintbrush_Miles_per_Gallon[1])]"
+          "update": "[scale(\"y\", paintbrush_Miles_per_Gallon[0]),scale(\"y\", paintbrush_Miles_per_Gallon[1])]"
         },
         {
           "events": {"signal": "paintbrush_translate_delta"},
@@ -151,7 +151,7 @@
             {"signal": "paintbrush_Horsepower"},
             {"signal": "paintbrush_Miles_per_Gallon"}
           ],
-          "update": "paintbrush_Horsepower && paintbrush_Miles_per_Gallon ? {unit: \"\", fields: paintbrush_tuple_fields, values: [paintbrush_Horsepower, paintbrush_Miles_per_Gallon]} : null"
+          "update": "paintbrush_Horsepower && paintbrush_Miles_per_Gallon ? {unit: \"\", fields: paintbrush_tuple_fields, values: [paintbrush_Horsepower,paintbrush_Miles_per_Gallon]} : null"
         }
       ]
     },
@@ -234,12 +234,7 @@
     },
     {
       "name": "paintbrush_modify",
-      "on": [
-        {
-          "events": {"signal": "paintbrush_tuple"},
-          "update": "modify(\"paintbrush_store\", paintbrush_tuple, true)"
-        }
-      ]
+      "update": "modify(\"paintbrush_store\", paintbrush_tuple, true)"
     }
   ],
   "marks": [

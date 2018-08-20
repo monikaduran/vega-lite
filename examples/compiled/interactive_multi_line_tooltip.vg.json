@@ -48,7 +48,6 @@
     {"name": "tooltip", "update": "vlSelectionResolve(\"tooltip_store\")"},
     {
       "name": "tooltip_tuple",
-      "value": {},
       "on": [
         {
           "events": [{"source": "scope", "type": "mouseover"}],
@@ -63,12 +62,7 @@
     },
     {
       "name": "tooltip_modify",
-      "on": [
-        {
-          "events": {"signal": "tooltip_tuple"},
-          "update": "modify(\"tooltip_store\", tooltip_tuple, true)"
-        }
-      ]
+      "update": "modify(\"tooltip_store\", tooltip_tuple, true)"
     }
   ],
   "marks": [

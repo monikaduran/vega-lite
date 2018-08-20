@@ -63,7 +63,7 @@
             {"signal": "grid_Horsepower"},
             {"signal": "grid_Miles_per_Gallon"}
           ],
-          "update": "grid_Horsepower && grid_Miles_per_Gallon ? {unit: \"\", fields: grid_tuple_fields, values: [grid_Horsepower, grid_Miles_per_Gallon]} : null"
+          "update": "grid_Horsepower && grid_Miles_per_Gallon ? {unit: \"\", fields: grid_tuple_fields, values: [grid_Horsepower,grid_Miles_per_Gallon]} : null"
         }
       ]
     },
@@ -122,12 +122,7 @@
     },
     {
       "name": "grid_modify",
-      "on": [
-        {
-          "events": {"signal": "grid_tuple"},
-          "update": "modify(\"grid_store\", grid_tuple, true)"
-        }
-      ]
+      "update": "modify(\"grid_store\", grid_tuple, true)"
     }
   ],
   "marks": [
