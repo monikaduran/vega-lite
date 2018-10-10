@@ -1,4 +1,3 @@
-import {isMinMaxOp} from '../../aggregate';
 import {MAIN, ParseValue, RAW} from '../../data';
 import * as log from '../../log';
 import {
@@ -15,7 +14,7 @@ import {
   isTimeUnit,
   isWindow
 } from '../../transform';
-import {Dict, keys, StringSet} from '../../util';
+import {Dict, keys} from '../../util';
 import {isFacetModel, isLayerModel, isUnitModel, Model} from '../model';
 import {requiresSelectionId} from '../selection/selection';
 import {AggregateNode} from './aggregate';
